@@ -189,7 +189,7 @@ Additionally, since C# (usually) knows the type of the value being assigned, you
 var value = 3;
 ```
 
-Note that this does exactly the same thing as the previous example. The variable `value` still has a type of `int`. Whether you should use `var` or not is a purely personal preference. If you're working on a team, refer to your team's style guide. Otherwise, consider following (Microsoft's coding conventions)[https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#implicitly-typed-local-variables].
+Note that this does exactly the same thing as the previous example. The variable `value` still has a type of `int`. Whether you should use `var` or not is a purely personal preference. If you're working on a team, refer to your team's style guide. Otherwise, consider following [Microsoft's coding conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#implicitly-typed-local-variables).
 
 ### Using a Variable
 
