@@ -233,7 +233,7 @@ value = value + 1;
 Console.WriteLine(value); // 4
 ```
 
-As a shorthand, the operators `+`, `-`, `*`, `/`, `&&`, and `||` (and a few others that haven't been introduced yet), can be used in "compound assignment".
+As a shorthand, the operators `+`, `-`, `*`, `/`, `&&`, and `||` (and a few others that haven't been introduced yet), can be used in **compound assignment**.
 
 ```csharp
 var value = 3;
@@ -243,11 +243,16 @@ value *= 2; // Equivalent to value = value * 2
 Console.WriteLine(value); // 8
 ```
 
-As a further shorthand, the `++` operator can used to increase a numeric value by 1.
+As a further shorthand, the `++` operator can used to increase a numeric value by 1. Similarly, `--` can be used to decrease an numeric value by 1.
 
 ```csharp
 var value = 3;
 value++; // Equivalent to value += 1
 Console.WriteLine(value); // 4
+value--; // Equivalent to value -= 1
+Console.WriteLine(value); // 3
 ```
 
+## Conditions
+
+**TODO:** `if`-statements
