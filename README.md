@@ -154,8 +154,62 @@ Console.WriteLine(0.1 + 0.1 + 0.1); // 0.30000000000000004
 
 ## Variables
 
-Variables allow you to give names to pieces of data. A variable can be declared by naming the type that the variable should hold followed by a name for the variable. For example, to declare a variable named `value` to store an integer, you would write
+Variables allow you to give names to pieces of data.
+
+### Declaring Variables
+
+A variable can be declared by naming the type that the variable should hold followed by a name for the variable. For example, to declare a variable named `value` to store an integer, you would write
 
 ```csharp
 int value;
+```
+
+Variable names must be unique within a single scope (you probably don't know what that means yet, for now it means that two variables can't have the same name). Variables name are not allowed to be the same as any of the [C# keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/). By convention, variables names are written in [camelCase](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions), although this isn't a requirement (but you should follow it anyway).
+
+### Assigning Variables
+
+A previously declared variabled can be assigned by using the variable named, an equal sign, and the value to assign. For example, to store the integer `3` in the previously declared `value` variable, you would write
+
+```csharp
+int value;
+value = 3;
+```
+
+The type of the value assigned to the variable must match the type of the variable.
+
+Since most of the time, variables are assigned immediately after they're declared, C# allows you to do both in the same line.
+
+``csharp
+int value = 3;
+```
+
+Additionally, since C# (usually) knows the type of the value being assigned, you can use the `var` keyword instead of the type name.
+
+```csharp
+var value = 3;
+```
+
+Note that this does exactly the same thing as the previous example. The variable `value` still has a type of `int`. Whether you should use `var` or not is a purely personal preference. If you're working on a team, refer to your team's style guide. Otherwise, consider following (Microsoft's coding conventions)[https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#implicitly-typed-local-variables].
+
+### Using a Variable
+
+The value stored inside a variable can be accessed simply by using the variable name.
+
+```csharp
+var value = 3;
+Console.WriteLine(value); // 3
+```
+
+Variables can be used (almost) anywhere a literal value can.
+```csharp
+// Using literals.
+Console.WriteLine(3); // 3
+Console.WriteLine(1 + 3); // 4
+var something = 3;
+
+// Using a variable.
+var value = 3;
+Console.WriteLine(value); // 3
+Console.WriteLine(1 + value); // 4
+int something = value;
 ```
