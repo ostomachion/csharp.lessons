@@ -179,7 +179,7 @@ The type of the value assigned to the variable must match the type of the variab
 
 Since most of the time, variables are assigned immediately after they're declared, C# allows you to do both in the same line.
 
-``csharp
+```csharp
 int value = 3;
 ```
 
@@ -227,7 +227,7 @@ Console.WriteLine(value); // 5
 
 You can even use the previous value as part of the new value.
 
-``csharp
+```csharp
 var value = 3;
 value = value + 1;
 Console.WriteLine(value); // 4
@@ -245,7 +245,7 @@ Console.WriteLine(value); // 8
 
 As a further shorthand, the `++` operator can used to increase a numeric value by 1.
 
-```
+```csharp
 var value = 3;
 value++; // Equivalent to value += 1
 Console.WriteLine(value); // 4
