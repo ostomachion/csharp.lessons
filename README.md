@@ -63,7 +63,7 @@ For now, just know that this is the pattern to write to the console. Try replaci
 
 C# provides multiple basic types to represent data.
 
-#### Logical Values
+### Logical Values
 C# has a type called `bool` (short for Boolean) to represent things that are true or false. The literal values are `true` and `false`.
 
 There are multiple operators that can be applied to Boolean values. The "and" operator, written `&&`, returns true only if both operands are true. The "or" operator, written `||`, returns true if either (or both) of its operands is true. The "not" operator, written `!`, returns true if its operand is false and vice versa.
@@ -86,7 +86,7 @@ Console.WriteLine("Hello" == "World"); // false
 Console.WriteLine("Hello" != "World"); // true
 ```
 
-#### Whole Numbers
+### Whole Numbers
 
 Integers are represented by a type called `int`. The `int` type represents 32-bit integer, which means that it can represent any value between -2,147,483,648 and 2,147,483,647, which is more than enough for most purposes. Integer literals are written without commas. For example, `42`, `10000`, and `-1`. If you want to separate the digits, you can use underscore characters, for example, `1_000_000`.
 
@@ -116,7 +116,7 @@ Console.WriteLine(1 <= 2); // true
 Console.WriteLine(1 >= 2); // false
 ```
 
-#### Decimal Numbers
+### Decimal Numbers
 
 Decimal numbers are represented by a type called `double`. The `double` type reprsents "double-precision floating point numbers" but don't worry about what that means right now, but the type can represent decimal values between approximately -1.8×10^308 and 1.8×10^308, and decimals as small as 4.94×10^-324. Double literals are written in the same way as integers, but include a decimal point and digits after the decimal point. For example, `3.14`, `2.0`, `-123.456789`.
 
@@ -152,3 +152,10 @@ Be careful with double values as they may not be exact due to the way they are e
 Console.WriteLine(0.1 + 0.1 + 0.1); // 0.30000000000000004
 ```
 
+## Variables
+
+Variables allow you to give names to pieces of data. A variable can be declared by naming the type that the variable should hold followed by a name for the variable. For example, to declare a variable named `value` to store an integer, you would write
+
+```csharp
+int value;
+```
