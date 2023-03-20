@@ -1,5 +1,23 @@
 # C# Cheatsheet
 
+- [C# Cheatsheet](#c-cheatsheet)
+  * [Initial Setup](#initial-setup)
+    + [Installing Visual Studio](#installing-visual-studio)
+    + [Creating a Project](#creating-a-project)
+    + [Running a program](#running-a-program)
+    + [Examining Program.cs](#examining-programcs)
+  * [Basic Values and Types](#basic-values-and-types)
+    + [Logical Values](#logical-values)
+    + [Textual Data](#textual-data)
+    + [Whole Numbers](#whole-numbers)
+    + [Decimal Numbers](#decimal-numbers)
+  * [Variables](#variables)
+    + [Declaring Variables](#declaring-variables)
+    + [Assigning Variables](#assigning-variables)
+    + [Using Variables](#using-variables)
+    + [Reassigning Variables](#reassigning-variables)
+  * [Conditions](#conditions)
+
 ## Initial Setup
 
 ### Installing Visual Studio
@@ -191,7 +209,7 @@ var value = 3;
 
 Note that this does exactly the same thing as the previous example. The variable `value` still has a type of `int`. Whether you should use `var` or not is a purely personal preference. If you're working on a team, refer to your team's style guide. Otherwise, consider following [Microsoft's coding conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#implicitly-typed-local-variables).
 
-### Using a Variable
+### Using Variables
 
 The value stored inside a variable can be accessed simply by using the variable name.
 
