@@ -213,3 +213,41 @@ Console.WriteLine(value); // 3
 Console.WriteLine(1 + value); // 4
 int something = value;
 ```
+
+### Reassigning Variables
+
+The value stored in a variable can be overwritten by assigning a new value to it (but make sure you don't redeclare it).
+
+```csharp
+var value = 3;
+Console.WriteLine(value); // 3
+value = 5;
+Console.WriteLine(value); // 5
+```
+
+You can even use the previous value as part of the new value.
+
+``csharp
+var value = 3;
+value = value + 1;
+Console.WriteLine(value); // 4
+```
+
+As a shorthand, the operators `+`, `-`, `*`, `/`, `&&`, and `||` (and a few others that haven't been introduced yet), can be used in "compound assignment".
+
+```csharp
+var value = 3;
+value += 1; // Equivalent to value = value + 1
+Console.WriteLine(value); // 4
+value *= 2; // Equivalent to value = value * 2
+Console.WriteLine(value); // 8
+```
+
+As a further shorthand, the `++` operator can used to increase a numeric value by 1.
+
+```
+var value = 3;
+value++; // Equivalent to value += 1
+Console.WriteLine(value); // 4
+```
+
